@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c8hs5rq8uq3ov"]
 
-[ext_resource type="Texture2D" uid="uid://brukxo5wfuxx5" path="res://draco assets/draco sprites/copy of knight.png" id="1_5xfwr"]
+[ext_resource type="Texture2D" uid="uid://brukxo5wfuxx5" path="res://Leo K/copy of knight.png" id="1_5xfwr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k1cid"]
 atlas = ExtResource("1_5xfwr")
