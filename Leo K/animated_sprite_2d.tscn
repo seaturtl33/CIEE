@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://c8hs5rq8uq3ov"]
+
+[ext_resource type="Texture2D" uid="uid://brukxo5wfuxx5" path="res://draco assets/draco sprites/copy of knight.png" id="1_5xfwr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1cid"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkcsu"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqumy"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8uds"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4x6xb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1cid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkcsu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqumy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8uds")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1742661327]
+sprite_frames = SubResource("SpriteFrames_4x6xb")
