@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bqj3fjixct7p6"]
+
+[ext_resource type="Texture2D" uid="uid://brukxo5wfuxx5" path="res://Leo K/copy of knight.png" id="1_5xfwr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y82kt"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbvul"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18ide"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeosg"]
+atlas = ExtResource("1_5xfwr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3mmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y82kt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbvul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18ide")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeosg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=6644429]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246972855]
+sprite_frames = SubResource("SpriteFrames_x3mmv")
