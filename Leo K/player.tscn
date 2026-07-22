@@ -279,9 +279,9 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=857672536]
+scale = Vector2(4, 4)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180094812]
 sprite_frames = SubResource("SpriteFrames_x3mmv")
-animation = &"dying"
-frame = 2
-frame_progress = 0.51707596
+animation = &"idle_down"
+frame_progress = 0.66652083
