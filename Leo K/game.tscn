@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://gm1pb0bi5b2i"]
 
+[ext_resource type="PackedScene" uid="uid://n4quwcjd3pek" path="res://Leo K/player.tscn" id="1_e37l0"]
+
 [node name="Game" type="Node2D" unique_id=1353307380]
+
+[node name="Player" parent="." unique_id=470839430 instance=ExtResource("1_e37l0")]
+position = Vector2(358, 463)
