@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhcnllr1j10pm"]
+
+[node name="Enemy" type="Area2D" unique_id=855402019]
+
+[node name="MoveTimer" type="Timer" parent="." unique_id=1480556944]
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=897545617]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1106650432]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=834440624]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=977797163]
