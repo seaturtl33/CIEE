@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brukxo5wfuxx5"
-path="res://.godot/imported/copy of knight.png-bac81638c0d98c7cae0695004da3d6a4.ctex"
+uid="uid://ce4y36tx8q7q3"
+path="res://.godot/imported/Grass_Middle.png-984a6e3b70ccfaf1549cc706f8df980b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Leo K/copy of knight.png"
-dest_files=["res://.godot/imported/copy of knight.png-bac81638c0d98c7cae0695004da3d6a4.ctex"]
+source_file="res://Leo K/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Grass_Middle.png"
+dest_files=["res://.godot/imported/Grass_Middle.png-984a6e3b70ccfaf1549cc706f8df980b.ctex"]
 
 [params]
 
