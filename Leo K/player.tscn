@@ -79,6 +79,10 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3mmv"]
+radius = 5.0
+height = 20.5
+
 [node name="Player" type="CharacterBody2D" unique_id=857672536]
 scale = Vector2(4, 4)
 script = ExtResource("1_igqw1")
@@ -86,4 +90,8 @@ script = ExtResource("1_igqw1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180094812]
 position = Vector2(148.75, 81.75)
 sprite_frames = SubResource("SpriteFrames_x3mmv")
-animation = &"run_right"
+animation = &"run_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475095574]
+position = Vector2(148.75, 80.75)
+shape = SubResource("CapsuleShape2D_x3mmv")
