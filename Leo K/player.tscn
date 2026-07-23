@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dxk7cr45h6c0p" path="res://Leo K/Cute_Fantasy_Free/Cute_Fantasy_Free/Player/Player.png" id="1_65ev0"]
 [ext_resource type="Script" uid="uid://daahy1867tt1l" path="res://Leo K/player.gd" id="1_igqw1"]
+[ext_resource type="Texture2D" uid="uid://r4dp5mhgwayx" path="res://Leo K/Hikari.png" id="3_siyxp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_igqw1"]
 atlas = ExtResource("1_65ev0")
@@ -116,28 +117,12 @@ atlas = ExtResource("1_65ev0")
 region = Rect2(160, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5nhe7"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(0, 64, 32, 32)
+atlas = ExtResource("3_siyxp")
+region = Rect2(40, 44, 14, 27)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_plosv"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(32, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p40m6"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(64, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nwxou"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qjt5x"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(128, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_65ipw"]
-atlas = ExtResource("1_65ev0")
-region = Rect2(160, 64, 32, 32)
+atlas = ExtResource("3_siyxp")
+region = Rect2(40, 44, 14, 27)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqk5v"]
 atlas = ExtResource("1_65ev0")
@@ -333,18 +318,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_plosv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p40m6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nwxou")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qjt5x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_65ipw")
 }],
 "loop": 1,
 "name": &"idle_up",
@@ -427,4 +400,4 @@ script = ExtResource("1_igqw1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180094812]
 position = Vector2(148.75, 81.75)
 sprite_frames = SubResource("SpriteFrames_x3mmv")
-animation = &"run_right"
+animation = &"idle_up"
