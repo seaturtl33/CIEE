@@ -1,13 +1,49 @@
 [gd_scene format=3 uid="uid://dhcnllr1j10pm"]
 
+[ext_resource type="Script" uid="uid://u7c08xbgbxrc" path="res://enemy.gd" id="1_4gyqm"]
+[ext_resource type="Texture2D" uid="uid://dr5hlver0mggd" path="res://Landon/Assets/Cat.png" id="1_7k104"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4fkeq"]
+radius = 7.28011
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gyqm"]
+atlas = ExtResource("1_7k104")
+region = Rect2(25, 0, 25, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
+atlas = ExtResource("1_7k104")
+region = Rect2(0, 0, 25, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xpnfh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gyqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi2p4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Enemy" type="Area2D" unique_id=855402019]
+position = Vector2(121, 124)
+script = ExtResource("1_4gyqm")
 
 [node name="MoveTimer" type="Timer" parent="." unique_id=1480556944]
+one_shot = true
 
 [node name="ShootTimer" type="Timer" parent="." unique_id=897545617]
+one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1106650432]
+shape = SubResource("CircleShape2D_4fkeq")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=834440624]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=977797163]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847969682]
+position = Vector2(1, -3)
+sprite_frames = SubResource("SpriteFrames_xpnfh")
+autoplay = "default"
+frame_progress = 0.20016178
+speed_scale = 2.0

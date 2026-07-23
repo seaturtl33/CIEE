@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bu1o4dkcx3d8a"]
+
+[ext_resource type="Texture2D" uid="uid://xo0rukypihn6" path="res://Landon/Assets/Umberlla.png" id="1_tqg7m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8f6r"]
+atlas = ExtResource("1_tqg7m")
+region = Rect2(26, 14, 22, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avpgv"]
+atlas = ExtResource("1_tqg7m")
+region = Rect2(48, 46, 22, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5aye"]
+atlas = ExtResource("1_tqg7m")
+region = Rect2(48, 14, 22, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4fkeq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8f6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avpgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5aye")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="enemy2" type="Area2D" unique_id=1900258750]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1485308668]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1861449871]
+position = Vector2(117, 131)
+sprite_frames = SubResource("SpriteFrames_4fkeq")
+autoplay = "default"
+frame_progress = 0.18928373
+speed_scale = 1.25
+
+[node name="MoveTimer" type="Timer" parent="." unique_id=2098848094]
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=1594281890]
