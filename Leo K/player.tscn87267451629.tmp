@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://djlhwiojrl6k7"]
 
 [ext_resource type="Script" uid="uid://daahy1867tt1l" path="res://Leo K/player.gd" id="1_igqw1"]
-[ext_resource type="PackedScene" uid="uid://d1fsi3k81d5x8" path="res://Leo K/player_bullet.tscn" id="2_1guwa"]
 [ext_resource type="Texture2D" uid="uid://sgqqobtqd67c" path="res://Leo K/Hikari Left.png" id="3_1guwa"]
 [ext_resource type="Texture2D" uid="uid://r4dp5mhgwayx" path="res://Leo K/Hikari.png" id="3_siyxp"]
 
@@ -87,16 +86,12 @@ height = 20.5
 [node name="Player" type="CharacterBody2D" unique_id=857672536]
 scale = Vector2(4, 4)
 script = ExtResource("1_igqw1")
-bullet_scene = ExtResource("2_1guwa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180094812]
-position = Vector2(0, 1)
+position = Vector2(148.75, 81.75)
 sprite_frames = SubResource("SpriteFrames_x3mmv")
 animation = &"run_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475095574]
+position = Vector2(148.75, 80.75)
 shape = SubResource("CapsuleShape2D_x3mmv")
-
-[node name="GunCooldown" type="Timer" parent="." unique_id=1845873920]
-
-[connection signal="timeout" from="GunCooldown" to="." method="_on_gun_cooldown_timeout"]
