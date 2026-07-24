@@ -81,8 +81,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3mmv"]
-radius = 5.0
-height = 20.5
+radius = 1.75
+height = 7.0
 
 [node name="Player" type="CharacterBody2D" unique_id=857672536]
 scale = Vector2(4, 4)
@@ -91,10 +91,12 @@ bullet_scene = ExtResource("2_1guwa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180094812]
 position = Vector2(0, 1)
+scale = Vector2(0.405, 0.405)
 sprite_frames = SubResource("SpriteFrames_x3mmv")
 animation = &"run_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475095574]
+position = Vector2(0, 0.5)
 shape = SubResource("CapsuleShape2D_x3mmv")
 
 [node name="GunCooldown" type="Timer" parent="." unique_id=1845873920]
