@@ -20,13 +20,13 @@ func start():
 	$GunCooldown.wait_time = cooldown
 
 func shoot():
-	print("Start shoot")
+	#print("Start shoot")
 	if not can_shoot:
 		return
 	can_shoot = false
 	$GunCooldown.start() 
 	
-	print("Spawn bullet")
+	#print("Spawn bullet")
 	var b = bullet_scene.instantiate()
 	get_tree().root.add_child(b)
 	b.start(position + Vector2(0, -8))
