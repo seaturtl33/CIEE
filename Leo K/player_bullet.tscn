@@ -20,6 +20,7 @@ shape = SubResource("CapsuleShape2D_x3mmv")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1425475458]
 visible = false
+z_index = 2
 scale = Vector2(1.25, 1.25)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
