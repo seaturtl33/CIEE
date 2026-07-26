@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bkmlpnjaxypor"]
+
+[ext_resource type="Texture2D" uid="uid://d0p4lh1jah0p2" path="res://Leo K/Enemy 1.png" id="1_0ihcf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5d72w"]
+atlas = ExtResource("1_0ihcf")
+region = Rect2(27, 13, 21, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onwd5"]
+atlas = ExtResource("1_0ihcf")
+region = Rect2(49, 44, 21, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj2dq"]
+atlas = ExtResource("1_0ihcf")
+region = Rect2(49, 13, 21, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3mmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5d72w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onwd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj2dq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onwd5")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x3mmv"]
+radius = 4.0
+
+[node name="Umbrella2" type="Area2D" unique_id=617673584]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1910264021]
+sprite_frames = SubResource("SpriteFrames_x3mmv")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=688348315]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_x3mmv")
