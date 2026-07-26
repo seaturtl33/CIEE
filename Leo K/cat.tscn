@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cngiklpoobd36"]
+
+[ext_resource type="Texture2D" uid="uid://cbvojfj1ckh41" path="res://Leo K/Enemy 2.png" id="1_6esvl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i04hc"]
+atlas = ExtResource("1_6esvl")
+region = Rect2(1, 0, 22, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q07d"]
+atlas = ExtResource("1_6esvl")
+region = Rect2(25, 0, 22, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3mmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i04hc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q07d")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Cat" type="AnimatedSprite2D" unique_id=1098720535]
+sprite_frames = SubResource("SpriteFrames_x3mmv")
+frame_progress = 0.6304948
