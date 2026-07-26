@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dveoaagtdodht"]
+
+[ext_resource type="Texture2D" uid="uid://7j1sg6uwwimj" path="res://Leo K/Single projectile.png" id="1_o3j4s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x3mmv"]
+radius = 2.0
+
+[node name="Enemy Bullet" type="Area2D" unique_id=1483744449]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2082221781]
+texture = ExtResource("1_o3j4s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217360770]
+shape = SubResource("CircleShape2D_x3mmv")
