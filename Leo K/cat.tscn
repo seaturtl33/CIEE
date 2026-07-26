@@ -1,37 +1,14 @@
 [gd_scene format=3 uid="uid://cngiklpoobd36"]
 
-[ext_resource type="Texture2D" uid="uid://cbvojfj1ckh41" path="res://Leo K/Enemy 2.png" id="1_6esvl"]
+[ext_resource type="PackedScene" uid="uid://cngiklpoobd36" path="res://Leo K/cat.tscn" id="1_6esvl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i04hc"]
-atlas = ExtResource("1_6esvl")
-region = Rect2(1, 0, 22, 33)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7q07d"]
-atlas = ExtResource("1_6esvl")
-region = Rect2(25, 0, 22, 33)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_x3mmv"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i04hc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7q07d")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_x3mmv"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_i04hc"]
 radius = 5.0
 
-[node name="Cat" type="AnimatedSprite2D" unique_id=1098720535]
-sprite_frames = SubResource("SpriteFrames_x3mmv")
-autoplay = "default"
-frame_progress = 0.6304948
+[node name="Cat" type="Area2D" unique_id=392909783]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1385626744]
+[node name="Cat" parent="." unique_id=1098720535 instance=ExtResource("1_6esvl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=474949140]
 position = Vector2(1, 4)
-shape = SubResource("CircleShape2D_x3mmv")
+shape = SubResource("CircleShape2D_i04hc")
