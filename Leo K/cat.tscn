@@ -24,6 +24,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_x3mmv"]
+radius = 5.0
+
 [node name="Cat" type="AnimatedSprite2D" unique_id=1098720535]
 sprite_frames = SubResource("SpriteFrames_x3mmv")
+autoplay = "default"
 frame_progress = 0.6304948
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1385626744]
+position = Vector2(1, 4)
+shape = SubResource("CircleShape2D_x3mmv")
