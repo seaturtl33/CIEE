@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dq2ssycnuk40m"]
+
+[ext_resource type="Texture2D" uid="uid://d0p4lh1jah0p2" path="res://Leo K/Enemy 1.png" id="1_mt244"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6xs3"]
+atlas = ExtResource("1_mt244")
+region = Rect2(27, 13, 20, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86tek"]
+atlas = ExtResource("1_mt244")
+region = Rect2(49, 44, 20, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjv36"]
+atlas = ExtResource("1_mt244")
+region = Rect2(49, 13, 20, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3mmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6xs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86tek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjv36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86tek")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Umbrella" type="AnimatedSprite2D" unique_id=618059381]
+sprite_frames = SubResource("SpriteFrames_x3mmv")
+frame = 2
+frame_progress = 0.23232922
