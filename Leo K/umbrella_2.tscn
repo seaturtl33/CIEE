@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bkmlpnjaxypor"]
 
 [ext_resource type="Texture2D" uid="uid://d0p4lh1jah0p2" path="res://Leo K/Enemy 1.png" id="1_0ihcf"]
+[ext_resource type="Script" uid="uid://c5lwolhnf7kqr" path="res://Leo K/umbrella_2.gd" id="1_5d72w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5d72w"]
 atlas = ExtResource("1_0ihcf")
@@ -38,11 +39,21 @@ animations = [{
 radius = 4.0
 
 [node name="Umbrella2" type="Area2D" unique_id=617673584]
+z_index = 2
+script = ExtResource("1_5d72w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1910264021]
+z_index = 2
 sprite_frames = SubResource("SpriteFrames_x3mmv")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=688348315]
+z_index = 2
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_x3mmv")
+
+[node name="MoveTimer" type="Timer" parent="." unique_id=487033543]
+one_shot = true
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=1783206516]
+one_shot = true

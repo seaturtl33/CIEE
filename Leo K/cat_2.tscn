@@ -28,11 +28,14 @@ animations = [{
 radius = 5.0
 
 [node name="Cat2" type="Area2D" unique_id=281779318]
+z_index = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=823056844]
+z_index = 2
 sprite_frames = SubResource("SpriteFrames_x3mmv")
 frame = 1
 frame_progress = 0.71851313
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=823598484]
+z_index = 2
 shape = SubResource("CircleShape2D_x3mmv")
