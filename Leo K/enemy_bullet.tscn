@@ -1,14 +1,21 @@
 [gd_scene format=3 uid="uid://dveoaagtdodht"]
 
+[ext_resource type="Script" uid="uid://dcf681dmsjplp" path="res://Leo K/enemy_bullet.gd" id="1_8as83"]
 [ext_resource type="Texture2D" uid="uid://7j1sg6uwwimj" path="res://Leo K/Single projectile.png" id="1_o3j4s"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x3mmv"]
 radius = 2.0
 
 [node name="Enemy Bullet" type="Area2D" unique_id=1483744449]
+z_index = 3
+script = ExtResource("1_8as83")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2082221781]
+z_index = 3
 texture = ExtResource("1_o3j4s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217360770]
+z_index = 3
 shape = SubResource("CircleShape2D_x3mmv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=2028175993]
