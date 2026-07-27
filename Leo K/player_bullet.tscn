@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dm2hjr22piqxu" path="res://Leo K/Player Projectile.png" id="2_vlhsr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3mmv"]
-radius = 3.0
+radius = 4.0
 height = 12.0
 
 [node name="Player Bullet" type="Area2D" unique_id=1211080466]
