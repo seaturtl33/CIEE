@@ -525,7 +525,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(196596, 0, 0, 262132, 0, 1, 327668, 0, 2, 196597, 65536, 0, 262133, 65536, 1, 327669, 65536, 2, 196598, 131072, 0, 262134, 131072, 1, 327670, 131072, 2, 65524, 1179648, 3, 131060, 1179648, 4, 65525, 1245184, 3, 131061, 1245184, 4, 65526, 1310720, 3, 131062, 1310720, 4)
 
 [node name="Umbrella2" parent="." unique_id=617673584 instance=ExtResource("6_ifrcp")]
-position = Vector2(-61, -92)
+position = Vector2(0, -23)
 
 [node name="SpawnTimer" type="Timer" parent="." unique_id=1070735998]
 autostart = true
